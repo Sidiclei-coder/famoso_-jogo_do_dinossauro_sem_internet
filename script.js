@@ -56,13 +56,14 @@ function createCactus() {
     else if (cactusPosition > 0 && cactusPosition < 60 && position < 60) {
         // Game over
         clearInterval(leftInterval);
+        
         document.body.innerHTML = '<h1 class="game-over">Fim de jogo</h1>';
       }
         else {
         cactusPosition -= 10;
         cactus.style.left = cactusPosition + 'px';
         }
-    }, 20);
+    }, 25);
     setTimeout(createCactus, randomTime);
 }
 

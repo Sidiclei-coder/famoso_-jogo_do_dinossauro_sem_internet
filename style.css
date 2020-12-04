@@ -26,3 +26,22 @@ body {
     font-family: ' Arial', 'Franklin Gothic Medium', 'Arial Narrow', sans-serif;
 }
 
+@keyframes slideright {
+    from {
+        background-position: 70000%;
+    }
+
+    to{
+        background-position: 0;
+    }
+}
+
+.background {
+    position: absolute;
+    bottom: 0;
+    background-image: url(img/background.png);
+    background-repeat: repeat-x;
+    animation: slideright 1000s infinite linear;
+    width: 100%;
+    height: 200px;
+}
